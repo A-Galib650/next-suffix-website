@@ -1,0 +1,31 @@
+.brand {
+    #brand-paragraph {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform .6s;
+    }
+
+    @media (max-width: 768px) {
+        #brand-paragraph {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    img:hover {
+
+        transform: scale(1.5);
+
+    }
+}

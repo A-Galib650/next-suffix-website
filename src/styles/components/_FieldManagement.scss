@@ -1,0 +1,149 @@
+.management-button {
+    margin: 40px auto 0;
+}
+
+.chooseList li i::before {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #095797;
+}
+
+.chooseList li {
+    font-size: 15px;
+}
+
+.chooseList li i::after {
+    font-weight: 300 !important;
+    font-size: 15px;
+}
+
+.chooseList li i {
+    // font-weight: 300 !important;
+}
+
+.about-icon-box img {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    padding: 10px 40px 10px 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 11px 18px -8px #0d6efd;
+}
+
+.management-button a {
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 10px;
+    color: #095797;
+    border: 0.1px solid #095797;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.management-button a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #095797, #609dce);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.management-button a:hover span {
+    width: 100%;
+}
+
+.management-button a:hover {
+    color: #fff;
+}
+
+.fieldForceMainContent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.fieldForceMainContent h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #071c4d;
+    padding: 0px 0px
+}
+
+.fieldForceListContent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.fieldListMain {
+    padding-left: 130px;
+}
+
+@media screen and (max-width: 1000px) {
+    .fieldForceMainContent {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .fieldForceListContent {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .fieldForceMainContent h1 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #071c4d;
+        padding: 20px 0px
+    }
+
+    .fieldListMain {
+        padding: 0px 55px;
+    }
+   
+}
+.fieldForceMainContent{
+    width: "100%";
+    padding: "50px 0px";
+}
+@media screen and (max-width: 576px) {
+    .about-icon-box img {
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+    
+     
+    }
+    .field-force-management-section{
+        width: "100%";
+        padding: "0px 0px";
+    }
+   
+    
+  
+   
+}

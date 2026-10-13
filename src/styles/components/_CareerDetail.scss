@@ -1,0 +1,84 @@
+.career-detail {
+    .career-detail-header {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(135deg, #1886e0, #05ace9);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        padding-bottom: 120px;
+    }
+    .custom-shape-divider-bottom-1635934862 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1635934862 svg {
+        position: relative;
+        display: block;
+        width: calc(101% + 1.3px);
+        height: 124px;
+    }
+
+    .custom-shape-divider-bottom-1635934862 .shape-fill {
+        fill: #ffffff;
+    }
+    .career-content img {
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+    }
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    // button
+
+    .career-button {
+        margin: 40px auto 0;
+    }
+
+    .career-button a {
+        width: 170px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 15px 10px;
+        color: #fff;
+        border: 0.1px solid #095797;
+        background-image: linear-gradient(135deg, #095797, #609dce);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition-property: background-image;
+        transition-duration: 2s;
+    }
+
+    .career-button a:hover span {
+        width: 100%;
+    }
+
+    .career-button a:hover {
+        color: #fff;
+        background-image: linear-gradient(135deg, #609dce, #095797);
+    }
+}

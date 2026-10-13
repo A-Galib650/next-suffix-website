@@ -1,0 +1,37 @@
+.gallery {
+    .styles_grid__1mw-l {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .styles_wrapper__1kG3C {
+        min-height: auto;
+        padding: 5rem 5rem;
+        background: rgb(252, 252, 252);
+    }
+    .styles_gridItem__nPXhF figcaption {
+        display: none;
+        padding: 5rem 5rem;
+        background: rgb(255, 255, 255);
+        color: rgb(252, 252, 252);
+    }
+    .__react_modal_image__header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    .styles_gridItem__nPXhF figure > div > img {
+        opacity: 0.8;
+        width: 100%;
+        background-color: #609dce;
+        border-radius: 5px;
+        padding: 0.3rem;
+    }
+    .styles_gridItem__nPXhF figure > div > img:hover {
+        opacity: 0.9;
+    }
+}

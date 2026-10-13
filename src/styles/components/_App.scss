@@ -1,0 +1,66 @@
+.spinner {
+    height: 100vh;
+    -webkit-animation: mover 0.5s infinite alternate;
+    animation: mover 0.5s infinite alternate;
+
+}
+
+.logoImg {
+    -webkit-animation: mover 0.5s infinite alternate;
+    animation: mover 0.5s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-190px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-190px);
+    }
+}
+
+.pageLoading {
+    background: linear-gradient(-45deg, #bdfaec, #b1e7fa, #e3b0f7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: #fff;
+    }
+
+    100% {
+        background-color: #56cef7;
+    }
+}
+
+.body {
+    font-family: 'Poppins', sans-serif !important;
+}

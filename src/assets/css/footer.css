@@ -1,0 +1,402 @@
+.modern-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 0; 
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* ===== FOOTER COLUMN CARD STYLE ===== */
+.modern-footer .col-lg-3:not(:last-child) {
+  position: relative;
+}
+
+/* Soft card feel for each section (left 3 blocks only) */
+.modern-footer .col-lg-3:not(:last-child) > * {
+  position: relative;
+  padding: 10px;
+}
+
+/* ===== LEFT BRAND SECTION ===== */
+.footer-brand {
+  width: 150px;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+  transition: 0.3s;
+}
+
+.footer-brand:hover {
+  transform: translateY(-3px);
+}
+
+.brand-text {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #d6e4ff;
+  opacity: 0.95;
+
+  padding: 14px 14px;
+  margin-bottom: 18px;
+/* 
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  position: relative;
+  transition: 0.3s ease;
+
+  box-shadow: inset 0 0 0 rgba(0,0,0,0); */
+}
+
+/* .brand-text:hover {
+  background: rgba(23, 92, 255, 0.08);
+  border-color: rgba(23, 92, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+} */
+
+/* Social buttons upgrade */
+.brand-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+  margin-right: 10px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  color: #ffffff;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.brand-socials a:hover {
+  background: #175cff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(23,92,255,0.3);
+}
+
+/* ===== CONTACT SECTION UPGRADE ===== */
+/* .contact-int .contact-item {
+  display: flex;
+  align-items: flex-start; 
+  gap: 12px;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.03);
+  transition: 0.3s;
+} */
+
+/* .contact-int .contact-item:hover {
+  background: rgba(23,92,255,0.08);
+  transform: translateX(4px);
+} */
+
+.contact-int i {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0; /* prevents icon shrinking */
+
+  border-radius: 8px;
+  background: rgba(23,92,255,0.15);
+  color: #175cff;
+
+  margin-top: 0; /* ❌ remove this */
+}
+
+/* ===== QUICK LINKS UPGRADE ===== */
+.quick-nav a {
+  position: relative;
+  color: #d6e4ff;
+  text-decoration: none;
+
+  padding: 6px 0;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.quick-nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #175cff, #00bfff);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.quick-nav a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.quick-nav a:hover::before {
+  width: 50%;
+}
+
+/* Container providing the WHITE background (#ffffff) */
+/* Container providing the WHITE background behind the city */
+.skyline-wrapper {
+  background-color: #ffffff; 
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* The silhouette itself, now set to #0A2D3D */
+.footer-skyline {
+  width: 100%;
+  height: 120px; 
+  /* This color fills the silhouette of the buildings */
+  background-color: #0A2D3D; 
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: bottom center;
+
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: bottom center;
+}
+
+.footer-top {
+  padding-top: 40px; 
+  /* padding-bottom: 20px; */
+  margin-top: 35px;
+}
+
+/* Partners Strip */
+.footer-middle {
+  padding: 15px 0;
+  background: #F8FAFC !important; 
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.partner-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partner-flex img {
+  height: 55px;
+  /* filter: grayscale(1);  */
+  /* opacity: 0.8; */
+  transition: 0.3s;
+}
+
+/* .partner-flex img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+} */
+
+.footer-brand {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.brand-text {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.brand-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.brand-socials a:hover {
+  background: #175cff; 
+  border-color: #175cff;
+}
+
+.footer-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+}
+
+.footer-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 45px;
+  height: 2px;
+  background-color: #175cff; 
+}
+
+.contact-int .contact-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-int i {
+  color: #175cff;
+  margin-top: 5px;
+}
+
+.contact-int p {
+  margin: 0;
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center; /* keeps multi-line text aligned nicely */
+}
+
+.quick-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quick-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.quick-nav a:hover {
+  color: #175cff;
+}
+
+/* ===== CERTIFICATION LOGOS ===== */
+.cert-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.iso-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: start;
+  column-gap: 20px;
+  row-gap: 8px;
+  width: 100%;
+}
+
+/* 2-item rows: use 2 equal columns so they stay left-aligned */
+.iso-grid:has(.iso-item:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.iso-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90px;   /* tall enough for the 110px ISO badges */
+  width: 100%;
+}
+
+.iso-item img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---- Logo sizes (high specificity so they always apply) ---- */
+.iso-item img.img-cer1     { height: 110px; }
+.iso-item img.img-cer2     { height: 110px; }
+.iso-item img.img-iso      { height: 60px;  }
+
+.iso-item img.img-basis    { height: 70px;  }
+.iso-item img.img-bacco    { height: 75px;  }
+
+.iso-item img.img-cisco    { height: 55px;  }
+.iso-item img.img-fort     { height: 80px;  }
+
+/* ✅ SOPHOS — now takes effect (was being overridden before) */
+.iso-item img.img-sophos {
+  height: 70px;
+  max-height: none;
+  width: auto;
+}
+
+.footer-bottom {
+  padding: 15px 0;
+  background: #000000;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-bottom p {
+  margin: 0;
+  /* opacity: 0.7; */
+}
+
+.brand-highlight {
+  color: #175cff; 
+  font-weight: 600;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .footer-top { text-align: left; }
+  .footer-header::after { left: 0; transform: none; }
+  .contact-int .contact-item { justify-content: flex-start; }
+
+  .iso-grid {
+    column-gap: 16px;
+    row-gap: 8px;
+  }
+  .iso-item {
+    height: 100px;
+  }
+  .iso-item img.img-cer1,
+  .iso-item img.img-cer2   { height: 95px; }
+  .iso-item img.img-iso    { height: 50px; }
+  .iso-item img.img-basis  { height: 55px; }
+  .iso-item img.img-bacco  { height: 60px; }
+  .iso-item img.img-cisco  { height: 48px; }
+  .iso-item img.img-fort   { height: 70px; }
+  .iso-item img.img-sophos {
+    height: 55px;
+    max-height: none;
+  }
+}

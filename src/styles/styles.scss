@@ -1,0 +1,16 @@
+// Important fonts imported from google fonts link
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+// Base resets and bootstrap integrations.
+@import "./base/variables";
+@import "./base/functions";
+@import "./abstracts/resets";
+@import "./abstracts/normalize";
+@import "./abstracts/typography";
+// @import './abstracts/bootstrap';
+// Loading all functions and variables
+// Main elements styles like html and body tags
+@import "./base/main";
+// All components are mounted in this index.scss file
+@import "./components/index";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';

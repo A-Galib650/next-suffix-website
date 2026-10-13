@@ -1,0 +1,21 @@
+.pos-billing {
+    .pos-feature-content {
+        img {
+            height: 80px !important;
+            width: 80px !important;
+            object-fit: contain;
+        }
+        display: flex;
+        justify-content: around;
+        align-items: center;
+        text-align: left;
+    }
+    @media (max-width: 990px) {
+        .pos-feature-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

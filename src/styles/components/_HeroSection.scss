@@ -1,0 +1,179 @@
+.hero-wrapper {
+    //youtube-btn-start
+    @mixin rings($duration, $delay) {
+        opacity: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        // rgb(194, 201, 217)
+        border: 8px solid rgb(86, 95, 121);
+        border-radius: 100%;
+        animation-name: ripple;
+        animation-duration: $duration;
+        animation-delay: $delay;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.65, 1, .34, 1);
+        z-index: -1;
+    }
+    .request-loader {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+        background: #FFFFFF;
+        // box-shadow: 0 0 20px 0 rgb(93, 92, 96);
+        span {
+            position: relative;
+            font-size: 72px;
+            top: -8px;
+            left: 0px;
+        }
+        &::after {
+            @include rings(3s, 0s);
+        }
+        &::before {
+            @include rings(3s, 0.5s);
+        }
+    }
+    @keyframes ripple {
+        from {
+            opacity: 1;
+            transform: scale3d(0.75, 0.75, 1);
+        }
+        to {
+            opacity: 0;
+            transform: scale3d(1.5, 1.5, 1);
+        }
+    }
+    //youtube-btn-end
+    .dots img {
+        position: absolute;
+    }
+    .nav-btn {
+        padding: 10px 40px 10px 40px !important;
+        font-size: 15px !important;
+        border-radius: 5px !important;
+        box-shadow: 0 11px 18px -8px #0d6efd;
+    }
+    .dots .dot-1 {
+        bottom: 20px;
+        left: 65px;
+        z-index: -1;
+    }
+    .dots .dot-2 {
+        top: 115px;
+        right: 25px;
+        z-index: -1;
+    }
+    .hero-content-wrap h1 {
+        font-family: "Poppins", sans-serif;
+        size: 48px;
+        color: #071c4d;
+    }
+    .hero-content-wrap p {
+        font-family: "Open Sans", sans-serif;
+        size: 20px;
+        color: #575757;
+    }
+    .hero-btn-primary {
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        // box-shadow: 0 11px 18px -8px rgb(23 92 255 / 60%);
+        padding: 10px;
+        font-weight: 500px;
+        font-family: "Poppins", sans-serif;
+    }
+    .hero-btn-primary:hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+    .hero-btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.675rem 1.75rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+    }
+    .youtube img {
+        // margin-right: 10px;
+    }
+    .bubble .bubble-1 {
+        height: 160px;
+        width: 160px;
+        background-color: #175cff;
+        left: 0;
+        bottom: 10%;
+    }
+    .bubble span {
+        position: absolute;
+        border-radius: 50%;
+    }
+    .bubble .bubble-2 {
+        height: 85px;
+        width: 85px;
+        background-color: #fff;
+        right: 0;
+        top: 30%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    @media only screen and (max-width: 600px) {
+        .youtube {
+            padding-top: 5px;
+            flex: none;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .bubble .bubble-1{
+            height: 110px;
+            width: 110px;
+        }
+        
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-class {
+        padding: 100px 0 !important;
+    }
+    .hero-img img {
+        max-width: 85%;
+     }
+   
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-class {
+        padding: 120px 0 !important;
+        min-height: 100vh;
+    }
+  
+   
+}

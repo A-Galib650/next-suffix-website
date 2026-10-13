@@ -1,0 +1,21 @@
+.HospitalManagement {
+    .hospital-feature-content {
+        img {
+            height: 80px !important;
+            width: 80px !important;
+            object-fit: contain;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+    @media (max-width: 990px) {
+        .hospital-feature-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

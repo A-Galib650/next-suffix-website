@@ -1,0 +1,18 @@
+.whoweare {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  position: relative;
+
+  .whoweare-container {
+    // position: absolute;
+ // bottom: 5%;
+ // left: 50%;
+ // transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width : 767px) {
+  .whoweare {
+    height: calc(100vh - 65px);
+  }
+}

@@ -1,0 +1,83 @@
+.ourProduct-swiper {
+    .swiper {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        background: white;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 330px;
+        height: 400px;
+        background: white;
+        cursor: pointer;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        height: 7px;
+        width: 7px;
+        margin-right: 4px;
+        background-color: #609DCE
+    }
+
+    p {
+        color: #6C757D !important
+    }
+
+    @keyframes shake {
+        25% {
+            transform: rotate(calc(var(--angle) * -1));
+        }
+
+        50% {
+            transform: rotate(var(--angle));
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .product-card {
+        --width: 100%;
+        --time: 0.7s;
+
+        position: relative;
+        display: inline-block;
+        height: 1em;
+        padding: 1em;
+
+        color: white;
+        background: white;
+        overflow: hidden;
+    }
+
+    .product-card span {
+        position: absolute;
+        display: block;
+        content: "";
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-radius: 100%;
+        background: hsla(207, 97%, 77%, 0.442);
+
+        transform: translate(-50%, -50%);
+        transition: width var(--time), padding-top var(--time);
+    }
+
+    .product-card:hover span {
+        width: calc(var(--width) * 2.25);
+        padding-top: calc(var(--width) * 2.25);
+    }
+
+
+}

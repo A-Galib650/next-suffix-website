@@ -1,0 +1,23 @@
+.VideoConferencing {
+    .video-conference-experience-content {
+        h2 {
+            font-size: 16px;
+            word-spacing: 3px;
+        }
+    }
+
+    .video-conference-feature {
+        .feature-content {
+            display: flex;
+        }
+
+        @media (max-width: 840px) {
+            .feature-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

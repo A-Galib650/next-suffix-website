@@ -1,0 +1,6 @@
+{
+  "name": "Suffix IT – Enterprise Software Solutions",
+  "description": "Suffix IT delivers cutting-edge enterprise software, ERP, Cloud, IoT, and custom digital transformation solutions with modern architecture, responsive performance, and high availability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

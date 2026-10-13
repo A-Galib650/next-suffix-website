@@ -1,0 +1,54 @@
+.ProvidentFundPage {
+    .seamlessText {
+        text-align: justify;
+    }
+    @media (max-width: 994px) {
+        .seamlessText {
+            text-align: center;
+        }
+    }
+}
+
+.Feature {
+    .box-wrapper .box {
+        width: auto;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative;
+        perspective: 1000px;
+    }
+    .box-wrapper .box .front-face {
+        background: #fff;
+        height: 260px;
+        width: 100%;
+    }
+    .box-wrapper .box .back-face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 1;
+        height: 260px;
+        width: 100%;
+        padding: 30px;
+        color: #fff !important;
+        opacity: 0;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        background: linear-gradient(-135deg, #82e0ff, #05ace9);
+        transform: translateZ(110px) rotateX(-90deg);
+        transition: all 0.5s ease;
+        border-radius: 5px;
+    }
+    .box-wrapper .box .back-face h2 {
+        color: #fff !important;
+    }
+    .box:hover .back-face {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    .box:hover .front-face {
+        opacity: 1;
+        transform: translateZ(-110px) rotateX(90deg);
+    }
+}

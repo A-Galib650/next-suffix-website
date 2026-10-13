@@ -1,0 +1,53 @@
+.navigation-white {
+    background: transparent;
+    min-height: 70px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+.navigation-blue {
+    background: transparent;
+    min-height: 70px;
+    font-size: 1.2rem;
+    color: black;
+}
+.nav-after-scroll {
+    background: rgb(251, 251, 251);
+    color: black;
+    min-height: 70px;
+    font-size: 1.2rem;
+}
+.navigation-white .dropDownHover:hover > .dropdownHover-menu {
+    border: none;
+    padding: 1.7rem;
+}
+.nav-after-scroll .dropDownHover:hover > .dropdownHover-menu {
+    border: 2px solid whitesmoke;
+    padding: 1.7rem;
+
+    // box-shadow: 10px 10px 40px rgba(248, 248, 248, 248);
+}
+
+.dropDownHover > .dropdownHover-menu {
+    font-size: 1.2rem;
+    display: block;
+    max-height: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+}
+
+.dropDownHover:hover > .dropdownHover-menu {
+    max-height: 800px;
+    visibility: visible;
+}
+
+// .dropDownHover:hover > .dropdownHover-menu {
+//     display: block;
+// }
+
+.navigation-white .nav-link:hover {
+    color: white !important;
+}
+.nav-after-scroll .nav-link:hover {
+    color: #1886e0 !important;
+}

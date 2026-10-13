@@ -1,0 +1,103 @@
+.webECommerce {
+    .pricing-card {
+        max-width: 380px;
+        background-color: rgb(255, 255, 255);
+        min-height: 550px;
+        margin: 20px 10px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+        color: #2d2d2d;
+        transition: 0.3s linear;
+        box-shadow: 10px 10px 40px rgb(235, 235, 235);
+        border-radius: 20px;
+    }
+    .pricing-card-header-basic {
+        background-color: #43a047;
+        display: inline-block;
+        color: rgb(211, 234, 255);
+        padding: 12px 30px;
+        border-radius: 0 0 20px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        box-shadow: 10px 10px 40px whitesmoke;
+        transition: 0.4s linear;
+    }
+    .pricing-card-header-pro {
+        background-color: #0277bd;
+        display: inline-block;
+        color: rgb(211, 234, 255);
+        padding: 12px 30px;
+        border-radius: 0 0 20px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        box-shadow: 10px 10px 40px whitesmoke;
+        transition: 0.4s linear;
+    }
+    .pricing-card-header-premium {
+        background-color: #e91363;
+        display: inline-block;
+        color: rgb(211, 234, 255);
+        padding: 12px 30px;
+        border-radius: 0 0 20px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        box-shadow: 10px 10px 40px whitesmoke;
+        transition: 0.4s linear;
+    }
+
+    .pricing-card:hover .pricing-card-header-basic {
+        box-shadow: 0 0 0 27em #0fbcf9;
+    }
+    .pricing-card:hover .pricing-card-header-pro {
+        box-shadow: 0 0 0 27em #0fbcf9;
+    }
+    .pricing-card:hover .pricing-card-header-premium {
+        box-shadow: 0 0 0 27em #0fbcf9;
+    }
+
+    .price {
+        font-size: 70px;
+        color: #0fbcf9;
+        margin: 15px 0;
+        transition: 0.2s linear;
+    }
+    .price sup,
+    .price span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .pricing-card:hover,
+    .pricing-card:hover .price,
+    .pricing-card:hover h1 {
+        color: #fff;
+    }
+    h1 {
+        font-weight: 500;
+    }
+    .pricing-card li {
+        font-size: 11px;
+        padding: 9px 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .order-btn {
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-top: 90px;
+        border: 2px solid #0fbcf9;
+        color: #0fbcf9;
+        padding: 18px 40px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: 0.3s linear;
+    }
+    .order-btn:hover {
+        background-color: #0fbcf9;
+        color: #fff;
+    }
+}

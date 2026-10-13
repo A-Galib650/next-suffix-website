@@ -1,0 +1,162 @@
+.field-management-detail {
+    .field-force-management-intro {
+        h1 {
+            font-size: 28px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            word-spacing: 5px;
+        }
+    }
+    // Field Force Feature
+    .field-force-feature {
+        .feature {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 40px;
+            padding-top: 100px;
+            cursor: pointer;
+            transition-property: padding-top;
+            transition-duration: 0.4s;
+
+            p {
+                text-align: left;
+                color: black;
+
+                font-size: 15px;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.4s linear;
+            }
+            h1 {
+                color: rgb(3, 0, 48);
+                font-size: 25px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+        #attendance {
+            background: rgb(251, 251, 251);
+            box-shadow: 10px 10px 40px rgb(241, 241, 241);
+        }
+        #attendance:hover {
+            background: linear-gradient(-135deg, #51badd, #0096cc);
+        }
+        #attendance:hover img {
+            display: none;
+        }
+
+        .feature:hover {
+            max-height: 300px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 40px;
+            p {
+                text-align: left;
+                color: #ffffff;
+                font-size: 15px;
+                visibility: visible;
+                opacity: 1;
+            }
+            h1 {
+                color: #fff;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .feature:hover {
+                max-height: 300px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0px 40px;
+            }
+        }
+    }
+
+    // Field Force Work
+    .field-force-work {
+        .content-start {
+            display: flex;
+            justify-content: start;
+        }
+        .content-end {
+            display: flex;
+            justify-content: end;
+        }
+
+        @media (max-width: 1224px) {
+            .content-start {
+                display: flex;
+                justify-content: center;
+            }
+            .content-end {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-start {
+                display: flex;
+                justify-content: center;
+            }
+            .content-end {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    // Field Force Demo
+    .field-force-demo {
+        .force-demo-button {
+            margin: 40px auto 0;
+        }
+
+        .force-demo-button a {
+            width: 180px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 15px 10px;
+            color: #095797;
+            border: 0.1px solid #095797;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+            transition: color 0.5s;
+        }
+        .force-demo-button a span {
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(135deg, #095797, #609dce);
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        .force-demo-button a:hover span {
+            width: 100%;
+        }
+
+        .force-demo-button a:hover {
+            color: #fff;
+        }
+    }
+}

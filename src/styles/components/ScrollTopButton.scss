@@ -1,0 +1,42 @@
+.scroll-top {
+    .scrollTop-style-visible {
+        border-radius: 50%;
+        border: none !important;
+        background: linear-gradient(-135deg, #1e91f0, #65d6ff);
+        margin-right: 25px;
+        height: 40px;
+        width: 40px;
+        visibility: visible;
+        opacity: 0.7;
+        transition: visibility 3s linear 0s, opacity 600ms;
+    }
+
+    .scrollTop-style-visible:hover {
+        background: linear-gradient(-135deg, #65d6ff, #1e91f0);
+    }
+
+    .scrollTop-style-none {
+        display: none;
+    }
+
+    .scrollTop-style-visible {
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+    }
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+}

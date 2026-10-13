@@ -1,0 +1,93 @@
+.OurProductHeader {
+    .fieldForce-header {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(135deg, #82e0ff, #05ace9);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        padding-bottom: 120px;
+    }
+    .custom-shape-divider-bottom-1633004606 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1633004606 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 105px;
+    }
+
+    .custom-shape-divider-bottom-1633004606 .shape-fill {
+        fill: #ffffff;
+    }
+    .fieldContent img {
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+    }
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    .header-button {
+        border: 5px solid #fff;
+        border-radius: 26px;
+        position: relative;
+        top: 100%;
+        left: 48%;
+        width: 35px;
+        height: 60px;
+        backface-visibility: hidden;
+        transform: translateY(-50%, -50%);
+        cursor: pointer;
+    }
+    .header-button:after {
+        background-color: #fff;
+        border-radius: 100%;
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        margin-left: -5px;
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+        animation: animate 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    }
+    @keyframes animate {
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+        }
+
+        10% {
+            transform: translateY(0) scaleY(1.2) scaleX(1.2) translateZ(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(50px) scaleY(2.5) scaleX(2.5) translateZ(0);
+            opacity: 0.001;
+        }
+    }
+}
